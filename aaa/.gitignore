@@ -1,0 +1,19 @@
+# Node
+/frontend/node_modules/
+
+# Python venv
+/backend/venv/
+/venv/
+
+# Byte-compiled
+**/__pycache__/
+*.pyc
+
+# Env files
+*.env
+backend/.env
+frontend/.env
+
+# Editor
+.vscode/
+.DS_Store

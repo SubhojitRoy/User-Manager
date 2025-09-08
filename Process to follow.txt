@@ -1,0 +1,42 @@
+Backend
+=======
+# from project root (where backend/ folder sits)
+python3 -m venv venv
+source venv/bin/activate     # Linux / macOS
+# OR venv\Scripts\activate    # Windows
+pip install -r requirements.txt
+
+# set env vars (or copy backend/.env.example -> backend/.env and edit)
+export DB_USER=radius
+export DB_PASS=radpass
+export DB_HOST=localhost
+export DB_NAME=radius
+
+# start
+python3 run.py        # app.listen -> http://127.0.0.1:5000
+
+
+Frontend
+========
+# Node version: Node 20.19+ recommended for Vite 7. See Vite docs. :contentReference[oaicite:2]{index=2}
+cd frontend
+npm install
+npm run dev -- --host 0.0.0.0 --port 5173
+# dev server typically on http://localhost:5173/user
+
+
+
+cd /opt/aaa/frontend
+npm install   # if not done yet
+npm run dev -- --host 0.0.0.0 --port 7000
+
+
+
+sudo lsof -i :5000
+sudo lsof -i :5173
+
+
+
+
+
+
